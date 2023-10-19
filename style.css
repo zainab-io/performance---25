@@ -1,0 +1,123 @@
+*{
+  box-sizing: border-box;
+  
+}
+body{
+  padding:0;
+  margin:0;
+  background-color: #333;
+}
+
+
+/* headerpart */
+.header{
+  text-align:center;
+  background-color:rgb(43, 88, 88);
+ padding: 32px;
+color:#ffff;
+
+
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  
+  display: inline-block;
+  color: #80979e;
+  text-align:left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/* topnavend */
+/* rowstart */
+.leftcolumn{
+  float:left;
+  width:72%;
+  background-color: aliceblue;
+}
+.fakeimg{
+ background-color:rgb(103, 202, 156); 
+ padding:20px;
+ width:100%;
+}
+.card{
+
+  padding: 20px;
+  margin-top: 20px;
+}
+.rightcolumn{
+float:left;
+width:25%;
+
+
+}
+.row::after{
+  content:"";
+  display:table;
+  clear:both;
+
+}
+
+.footer {
+  padding: 23px;
+  background-color: darkgray;
+  text-align: center;
+  margin: 0 auto; /* Center the element horizontally */
+  width: 100%; /* Adjust the width as needed */
+}
+@media screen and(max-width:800px){
+  .leftcolumn, .rightcolumn{
+     padding:0 ;
+      width:100%;
+      margin:0;
+  }
+}
+/* for400px */
+@media screen and(max-width:400px){
+  .topnav a{
+      float:none;
+      width:100%;
+      text-align:center;
+  }
+}
+p{
+  color:rgb(43, 40, 40);
+}
+.test{
+color:blueviolet;
+
+}
+#first{
+  color:darkseagreen;
+}
+div .test{
+  color:palevioletred;
+}
+
+div.main p.test{
+color:slateblue !important;
+}
+#div1 {
+  background-color:coral;
+  height: 100px;
+  width: max(50%, 300px);
+}
+.round{
+  height: 150px;
+  width:150px;
+  border:2px dotted palevioletred;
+  border-radius: 50%;
+}
